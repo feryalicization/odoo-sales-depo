@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem
+        id="menu_sales_depo_root"
+        name="Sales Depo Management"
+        parent="sale.menu_sale_config"
+        sequence="35"
+        groups="sales_depo_management.group_sales_depo_master_manager,base.group_system"
+    />
+
+    <menuitem
+        id="menu_sales_region"
+        name="Regions"
+        parent="sales_depo_management.menu_sales_depo_root"
+        action="sales_depo_management.action_sales_region"
+        sequence="10"
+        groups="sales_depo_management.group_sales_depo_master_manager,base.group_system"
+    />
+
+    <menuitem
+        id="menu_sales_depo"
+        name="Depos"
+        parent="sales_depo_management.menu_sales_depo_root"
+        action="sales_depo_management.action_sales_depo"
+        sequence="20"
+        groups="sales_depo_management.group_sales_depo_master_manager,base.group_system"
+    />
+</odoo>

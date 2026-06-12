@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_partner_form_sales_depo" model="ir.ui.view">
+        <field name="name">res.partner.form.sales.depo</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='internal_notes']//field[@name='comment']" position="after">
+                <group string="Sales Depo" groups="sales_depo_management.group_sales_depo_master_manager,base.group_system">
+                    <field name="default_depo_id" options="{'no_create': True}"/>
+                    <field name="region_id" readonly="1"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

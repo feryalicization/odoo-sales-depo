@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sales_region_user,sales.region.user,sales_depo_management.model_sales_region,sales_depo_management.group_sales_depo_user,1,0,0,0
+access_sales_region_supervisor,sales.region.supervisor,sales_depo_management.model_sales_region,sales_depo_management.group_sales_depo_supervisor,1,0,0,0
+access_sales_region_region_manager,sales.region.region.manager,sales_depo_management.model_sales_region,sales_depo_management.group_sales_depo_region_manager,1,0,0,0
+access_sales_region_master_manager,sales.region.master.manager,sales_depo_management.model_sales_region,sales_depo_management.group_sales_depo_master_manager,1,1,1,1
+access_sales_depo_master_manager,sales.depo.master.manager,sales_depo_management.model_sales_depo,sales_depo_management.group_sales_depo_master_manager,1,1,1,1
+access_sales_depo_user,sales.depo.user,sales_depo_management.model_sales_depo,sales_depo_management.group_sales_depo_user,1,0,0,0
+access_sales_depo_supervisor,sales.depo.supervisor,sales_depo_management.model_sales_depo,sales_depo_management.group_sales_depo_supervisor,1,0,0,0
+access_sales_depo_region_manager,sales.depo.region.manager,sales_depo_management.model_sales_depo,sales_depo_management.group_sales_depo_region_manager,1,0,0,0
+access_sales_region_system,sales.region.system,sales_depo_management.model_sales_region,base.group_system,1,1,1,1
+access_sales_depo_system,sales.depo.system,sales_depo_management.model_sales_depo,base.group_system,1,1,1,1

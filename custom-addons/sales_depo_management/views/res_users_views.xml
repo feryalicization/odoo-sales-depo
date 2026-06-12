@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_res_users_form_sales_depo" model="ir.ui.view">
+        <field name="name">res.users.form.sales.depo</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <page name="access_rights" position="inside">
+                <group string="Sales Depo" groups="sales_depo_management.group_sales_depo_master_manager,base.group_system">
+                    <field name="depo_ids" widget="many2many_tags" options="{'no_create': True}"/>
+                    <field name="default_depo_id" options="{'no_create': True}"/>
+                </group>
+            </page>
+        </field>
+    </record>
+</odoo>

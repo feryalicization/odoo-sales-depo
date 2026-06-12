@@ -1,0 +1,25 @@
+{
+    "name": "Sales Depo Management",
+    "summary": "Phase 2 master data for sales regions and depos",
+    "version": "18.0.1.0.0",
+    "category": "Sales/Sales",
+    "license": "LGPL-3",
+    "author": "OpenAI",
+    "depends": [
+        "sale_management",
+        "stock",
+    ],
+    "data": [
+        "security/sales_depo_security.xml",
+        "security/ir.model.access.csv",
+        "security/sales_depo_rules.xml",
+        "views/sales_region_views.xml",
+        "views/sales_depo_views.xml",
+        "views/res_users_views.xml",
+        "views/res_partner_views.xml",
+        "views/sales_depo_menus.xml",
+    ],
+    "demo": [],
+    "installable": True,
+    "application": False,
+}
