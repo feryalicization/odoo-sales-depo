@@ -1,0 +1,26 @@
+# Python virtual environment
+.venv/
+
+# Odoo source code
+odoo/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Odoo/runtime files
+*.log
+*.pid
+.sessions/
+filestore/
+
+# Local configuration with credentials
+config/odoo.conf
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
