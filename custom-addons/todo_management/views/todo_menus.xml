@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem
+        id="menu_todo_root"
+        name="Task Center"
+        action="todo_management.action_todo_task"
+        sequence="10"
+        groups="todo_management.group_todo_manager,base.group_system"
+    />
+</odoo>
